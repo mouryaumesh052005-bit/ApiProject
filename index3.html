@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+</head>
+<link rel="stylesheet" href="style3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<body>
+    <div class="container">
+        <div id="search-button">
+            <div id="search">
+                <input type="text" id="input" placeholder="Enter Name Here...">
+                <button id="searched-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </div>
+        <table id="table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Language</th>
+                    <th>Id</th>
+                    <th>Bio</th>
+                    <th>Version</th>
+                    <th>Delete option</th>
+                    <th>Update</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+
+            </tbody>
+        </table>
+        <button id="ascending">Get Data In Ascending</button>
+    </div>
+    <div class="edit-section">
+        <div class="section">
+            <label for="edit-name">Enter New Name Here</label>
+            <input type="text" id="edit-name" placeholder="Enter Name Here..." required>
+            <label for="edit-language">Enter New Language Here</label>
+            <input type="text" id="edit-language" placeholder="Enter Language Here..." required>
+            <label for="edit-id">Enter New Id Here</label>
+            <input type="text" id="edit-id" placeholder="Enter Id Here..." required>
+            <label for="edit-bio">Enter New Bio Here</label>
+            <input type="text" id="edit-bio" placeholder="Enter Bio Here..." required>
+            <label for="edit-version">Enter New Version Here</label>
+            <input type="text" id="edit-version" placeholder="Enter Version Here..." required>
+        </div>
+        <button type="submit" id="submitbtn">Submit</button>
+    </div>
+</body>
+<script src="script3.js"></script>
+
+</html>

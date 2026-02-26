@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+table,
+th,
+td {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.edit-section {
+    visibility: hidden;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: grey;
+    width: 90%;
+    max-width: 1000px;
+    max-height: 90vh;
+    border-radius: 20px;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.section {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 23px;
+    display: flex;
+    flex-direction: column;
+}
+
+#edit-name,
+#edit-language,
+#edit-id,
+#edit-bio,
+#edit-version {
+    width: 100%;
+    margin: 10px 0;
+    height: 30px;
+    border-radius: 10px;
+    outline: none;
+    font-family: cursive;
+    text-align: center;
+}
+
+#search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: white;
+    height: 45px;
+    width: 100%;
+    border: 2px solid #635f5f;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 0 15px;
+}
+
+#input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background-color: transparent;
+}
+
+#searched-button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    background: transparent;
+}
+
+#ascending {
+    height: 40px;
+    width: 100%;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    border-radius: 20px;
+}
+
+#submitbtn {
+    height: 40px;
+    width: 100%;
+    margin-top: 20px;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+    thead {
+        display: none;
+    }
+
+    tr {
+        display: block;
+        background: white;
+        margin: 15px 0;
+        padding: 15px;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    td {
+        display: block;
+        border: none;
+        padding: 5px 0;
+    }
+
+    #input {
+        font-size: 14px;
+    }
+
+    td:nth-child(1) {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    td:nth-child(2) {
+        color: #666;
+    }
+
+    button {
+        margin-top: 8px;
+        padding: 8px 14px;
+        border: none;
+        border-radius: 8px;
+        font-weight: 600;
+    }
+
+    button:first-child {
+        background: #ff4d4d;
+        color: white;
+    }
+
+    button:last-child {
+        background: #4d79ff;
+        color: white;
+    }
+}
